@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pokémon NFC</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000000;
+            overflow: hidden;
+            touch-action: none;
+        }
+        #game {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="game"></div>
+
+    <script type="text/javascript">
+        EJS_player = '#game';
+        
+        // Consola: 'gba' para Game Boy Advance / 'gbc' para Game Boy Color
+        EJS_core = 'gbc';
+        
+        // Nombre de tu archivo de juego en la raíz del repositorio
+        EJS_gameUrl = 'Pokemon_oro.gbc';
+        
+        // Apunta a la carpeta local 'data' alojada en tu mismo GitHub
+        EJS_pathtodata = 'data/';
+        
+        // Carga automática
+        EJS_startOnLoaded = true;
+    </script>
+
+    <!-- Carga del cargador local -->
+    <script src="data/loader.js"></script>
+
+</body>
+</html>
